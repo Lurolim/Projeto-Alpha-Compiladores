@@ -17,7 +17,6 @@ O analisador léxico e sintático foi gerado com **ANTLR 4** e toda a etapa sem�
 - `Test_alpha/` — Programas de teste
 
 ## Requisitos Atendidos (Resumo)
-Este projeto atende aos requisitos descritos no PDF do A3:
 
 ✔ Tipos de variáveis: inteiro, real e booleano  
 ✔ Condicional: se ... senao  
