@@ -6,15 +6,15 @@ Ela inclui: declaração de variáveis, operações aritméticas, condicionais, 
 O analisador léxico e sintático foi gerado com **ANTLR 4** e toda a etapa semântica foi implementada em **Python** através de um visitor personalizado.
 
 ## Estrutura do Repositório
-antlr/                      → ANTLR 4.13.2 (jar para gerar o parser)
-ProjetoAlpha.g4            → Gramática da linguagem (versão fornecida pelo aluno)
-ProjetoAlphaLexer.py       → Lexer gerado pelo ANTLR
-ProjetoAlphaParser.py      → Parser gerado pelo ANTLR
-ProjetoAlphaVisitor.py     → Visitor base gerado pelo ANTLR
-ProjetoAlphaListener.py    → Listener base gerado pelo ANTLR
-semantic_checker.py        → Checagem semântica (tipos, variáveis, expressões, IO, etc.)
-main.py                    → Script principal (carrega arquivo, faz parsing e semântica)
-Test_alpha/                → Programas de teste (.alpha)
+- `antlr/` — ANTLR 4.13.2 (jar para gerar o parser)
+- `ProjetoAlpha.g4` — Gramática da linguagem
+- `ProjetoAlphaLexer.py` — Lexer gerado pelo ANTLR
+- `ProjetoAlphaParser.py` — Parser gerado pelo ANTLR
+- `ProjetoAlphaVisitor.py` — Visitor base gerado pelo ANTLR
+- `ProjetoAlphaListener.py` — Listener base gerado pelo ANTLR
+- `semantic_checker.py` — Checagem semântica
+- `main.py` — Script principal
+- `Test_alpha/` — Programas de teste
 
 ## Requisitos Atendidos (Resumo)
 Este projeto atende aos requisitos descritos no PDF do A3:
