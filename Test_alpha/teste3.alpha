@@ -1,0 +1,16 @@
+var nota : inteiro;
+var passou : booleano;
+
+{
+    nota = 75;
+
+    se (nota >= 60) {
+        passou = verdadeiro;
+    }
+    senao {
+
+        passou = falso;
+    }
+
+    escreva(passou);
+}

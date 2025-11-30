@@ -1,0 +1,7 @@
+var x : inteiro;
+{
+    x = 10;
+    se (x > 5) {
+        escreva(x);
+    }
+}

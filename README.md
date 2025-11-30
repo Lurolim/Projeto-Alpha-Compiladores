@@ -1,0 +1,55 @@
+# Projeto Alpha — Compilador
+
+## Sobre o Projeto
+O Projeto Alpha é uma linguagem simples desenvolvida para a disciplina de Compiladores.  
+Ela inclui: declaração de variáveis, operações aritméticas, condicionais, laços de repetição, entrada/saída e verificação semântica.  
+O analisador léxico e sintático foi gerado com **ANTLR 4** e toda a etapa semântica foi implementada em **Python** através de um visitor personalizado.
+
+## Estrutura do Repositório
+antlr/                      → ANTLR 4.13.2 (jar para gerar o parser)
+ProjetoAlpha.g4            → Gramática da linguagem (versão fornecida pelo aluno)
+ProjetoAlphaLexer.py       → Lexer gerado pelo ANTLR
+ProjetoAlphaParser.py      → Parser gerado pelo ANTLR
+ProjetoAlphaVisitor.py     → Visitor base gerado pelo ANTLR
+ProjetoAlphaListener.py    → Listener base gerado pelo ANTLR
+semantic_checker.py        → Checagem semântica (tipos, variáveis, expressões, IO, etc.)
+main.py                    → Script principal (carrega arquivo, faz parsing e semântica)
+Test_alpha/                → Programas de teste (.alpha)
+
+## Requisitos Atendidos (Resumo)
+Este projeto atende aos requisitos descritos no PDF do A3:
+
+✔ Tipos de variáveis: inteiro, real e booleano  
+✔ Condicional: se ... senao  
+✔ Laço: while  
+✔ Expressões aritméticas com precedência  
+✔ Atribuições com checagem de tipos  
+✔ leia() e escreva()  
+✔ Tokens ignorados (espaços e quebras)
+
+## Como Executar o Projeto
+Instale dependências:
+pip install antlr4-python3-runtime anytree
+
+Execute:
+python main.py Test_alpha/teste1.alpha
+
+## Como Regenerar o Parser
+java -jar antlr/antlr-4.13.2-complete.jar -Dlanguage=Python3 ProjetoAlpha.g4 -visitor
+
+## Testes
+python main.py Test_alpha/<arquivo>
+
+## Observações
+A gramática .g4 fornecida está incompleta.  
+Os arquivos gerados do ANTLR estão completos.
+
+## Conclusão
+O Projeto Alpha inclui:
+
+✔léxico,
+✔sintaxe,
+✔análise semântica,
+✔testes executáveis,
+
+cumprindo todos os requisitos solicitados para um Compilador.

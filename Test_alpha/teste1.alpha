@@ -1,0 +1,10 @@
+var idade : inteiro;
+var maior : booleano;
+
+{
+    leia(idade);
+
+    maior = idade >= 18;
+
+    escreva(maior);
+}
