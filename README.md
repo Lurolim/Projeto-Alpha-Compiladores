@@ -39,10 +39,6 @@ java -jar antlr/antlr-4.13.2-complete.jar -Dlanguage=Python3 ProjetoAlpha.g4 -vi
 ## Testes
 python main.py Test_alpha/<arquivo>
 
-## Observações
-A gramática .g4 fornecida está incompleta.  
-Os arquivos gerados do ANTLR estão completos.
-
 ## Conclusão
 O Projeto Alpha inclui:
 
